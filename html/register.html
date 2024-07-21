@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <title>月木游乐园注册系统</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+</head>
+
+<body>
+      <div class="tuichu" style="cursor:pointer; float: right; font-size: 40px;">&times;</div>
+  <!-- 卡片 -->
+  <div class="xtx-card">
+    <h3>新用户注册</h3>
+    <form class="xtx-form">
+      <div data-prop="username" class="xtx-form-item">
+        <span class="iconfont icon-zhanghao"></span>
+        <input name="username" type="text" placeholder="设置用户名称">
+        <span class="msg"></span>
+      </div>
+      <div data-prop="phone" class="xtx-form-item">
+        <span class="iconfont icon-shouji"></span>
+        <input name="phone" type="text" placeholder="输入手机号码  ">
+        <span class="msg"></span>
+      </div>
+      <div data-prop="code" class="xtx-form-item">
+        <span class="iconfont icon-zhibiaozhushibiaozhu"></span>
+        <input name="code" type="text" placeholder="短信验证码">
+        <span class="msg" style="width: auto;float: left;"></span>
+        <a class="code" href="javascript:;" style="width:auto; float: left;">发送验证码</a>
+      </div>
+      <div data-prop="password" class="xtx-form-item">
+        <span class="iconfont icon-suo"></span>
+        <input name="password" type="password" placeholder="设置6至20位字母、数字和符号组合">
+        <span class="msg"></span>
+      </div>
+      <div data-prop="confirm" class="xtx-form-item">
+        <span class="iconfont icon-suo"></span>
+        <input name="confirm" type="password" placeholder="请再次输入上面密码">
+        <span class="msg"></span>
+      </div>
+      <div class="xtx-form-item pl50">
+        <i class="iconfont icon-queren"></i>
+        已阅读并同意<i>《用户服务协议》</i>
+      </div>
+      <div class="xtx-form-item">
+        <button id="nextBtn" class="submit">下一步</button>
+        <!-- <a class="submit" href="javascript:;">下一步</a> -->
+      </div>
+
+    </form>
+  </div>
+  <script  src="../js/register.js"> </script>
+</body>
+
+</html>

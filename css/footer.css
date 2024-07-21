@@ -1,0 +1,78 @@
+﻿.footer {
+    position: relative;
+    /* 宽度不给 因为是通栏 */
+    height: 400px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.footer .left {
+    float: left;
+}
+
+.footer .left p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .left a {
+    display: block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: solid 1px #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer .right dl {
+    float: left;
+    margin-left: 120px;
+    color: #333;
+}
+
+.footer .right dt {
+    font-size: 16px;
+}
+
+.footer .right dd {
+    margin-top: 15px;
+}
+
+.footer .right a {
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+
+.footer .guanggao {
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    float: right;
+    display: block;
+    width: 150px;
+}
+
+.footer .guanggao p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(52, 154, 213);
+}
+
+.footer .guanggao .zp img {
+    width: 100%;
+}
+
+.footer .guanggao .zp:active {
+    visibility: hidden;
+    background-color: #fff;
+}

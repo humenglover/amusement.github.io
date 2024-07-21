@@ -1,0 +1,43 @@
+﻿.goods {
+    width: 1200px;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px 4px rgba(118, 118, 118, 0.2);
+}
+
+.goods h2 {
+    float: left;
+    padding-left: 25px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+    /* 加给li 太长了 */
+    /* border-left: 1px solid #bfbfbf; */
+}
+
+.goods li a {
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.goods .hobby {
+    float: right;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #00a4ff;
+}

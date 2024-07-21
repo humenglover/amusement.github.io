@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户订单详情</title>
+    <style>
+        #ordersTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        #ordersTable th,
+        #ordersTable td {
+            border: 1px solid #bbbbb6;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        #ordersTable th {
+            background-color: #fcf2b6;
+        }
+
+        #ordersTable tbody tr:nth-child(even) {
+            background-color: #baeaf2;
+        }
+
+        #ordersTable tbody tr:hover {
+            background-color: #e2d3d3;
+        }
+
+        .total {
+            margin: 20px;
+        }
+    </style>
+    <!-- <script src="../commmon.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="tuichu" style="cursor:pointer; float: right; font-size: 40px;">&times;</div>
+    <h1 id="username" style="text-align: center;"></h1>
+
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>项目</th>
+                <th>票种</th>
+                <th>票价</th>
+                <th>购票数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="ordersData"></tbody>
+
+    </table>
+    <div class="total">
+        <p class="totalvalues" style="color: rgb(246, 64, 64); font-size: 25px;">总价: $<span id="totalPrice"></span></p>
+    </div>
+
+    <script src="../js/mylist.js"></script>
+</body>
+
+</html>

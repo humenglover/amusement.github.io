@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好像没有这个项目</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        .container {
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+            margin-top: 20px;
+            /* 调整与顶部的距离 */
+        }
+
+        .tuichu {
+            cursor: pointer;
+            font-size: 40px;
+            position: absolute;
+            top: 10px;
+            right: 1%;
+        }
+
+        .item_image {
+            height: 25%;
+            border: 5px rgb(239, 131, 16) solid;
+        }
+
+        .item_image img {
+            height: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-indent: 2em;
+            text-align: left;
+        }
+
+        .ticket:hover {
+            color: rgb(255, 32, 248);
+        }
+
+        .ticket {
+            font-size: 20px;
+            animation: changeSize 1.5s infinite alternate;
+        }
+
+        a {
+            text-align: center;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        @keyframes changeSize {
+            0% {
+                font-size: 20px;
+            }
+
+            50% {
+                font-size: 25px;
+                color: #ff4848;
+                transition: ease;
+            }
+
+            100% {
+                font-size: 20px;
+            }
+        }
+
+        .comment {
+            border: 1px solid #ccc;
+            padding: 2px;
+            margin-bottom: 2px;
+        }
+
+        #comments {
+            padding: 0 5px;
+            text-align: left;
+            font-size: 12px;
+            /* 为评论区域添加内边距 */
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="tuichu" style="cursor:pointer; font-size: 40px;">&times;</div>
+    <div class="container">
+        <div class="item_image">
+            <img src="../images/yl-1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>好像没有这个项目</h2>
+            <p>
+                好像没有这个项目哟，重新搜索试试
+            </p>
+        </div>
+        <div class="comments">
+            <h3 style="margin-right: 85% ; color: #ffa91e;">用户评论</h3>
+            <div id="comments"></div>
+            <textarea id="newComment"></textarea>
+            <button onclick="addComment()">提交评论</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="../js/hotitemlists.js"></script>
+<script src="../js/comments.js"></script>
+
+</html>

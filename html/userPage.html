@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户主页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background: url(../images/userbackgroundimages.jpg) no-repeat center/cover;
+        }
+
+        #userForm {
+            background-color: rgba(204, 204, 204, 0.5);
+            width: 30%;
+            /* 使表单宽度自适应内容 */
+            margin: 0 auto;
+            /* 使表单水平居中 */
+            padding: 20px;
+        }
+
+        td {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tuichu" style="cursor:pointer; float: right; font-size: 40px;">&times;</div>
+    <form id="userForm">
+        <h2 style="text-align: center; color: rgb(139, 232, 85);">用户信息</h2>
+        <table>
+            <tr>
+                <td><label for="username">用户名：</label></td>
+                <td><input type="text" id="username" value="你还没有登录" disabled><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">性别：</label></td>
+                <td><select id="gender">
+                        <option value="男" selected>男</option>
+                        <option value="女">女</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="birthday">生日：</label></td>
+                <td><input type="date" id="birthday" value="2000-01-01"><br></td>
+            </tr>
+            <tr>
+                <td><label for="signature">签名：</label></td>
+                <td><input type="text" id="signature" value="你还写过如何内容哟"><br></td>
+            </tr>
+        </table>
+        <input type="button" value="确认修改" class="modifyInfo" style="background-color: red; color: white;">
+        <!-- 为确认修改按钮添加红色背景和白色文字 -->
+        <div style="margin: 0 auto;">
+            <ul>
+                <li class="mylist" style="cursor: pointer; color: rgb(247, 109, 78); text-align: center;">我的订单</li>
+                <!-- 让我的订单文本居中 -->
+            </ul>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/userPage.js"></script>
+</body>
+
+</html>

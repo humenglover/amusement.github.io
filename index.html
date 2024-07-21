@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>月木游乐园</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/tishici.css">
+    <link rel="stylesheet" href="./css/hotitem.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+<!-- 快捷导航模块 start -->
+<div class="top">
+    <!-- 叉 -->
+    <div class="tuichu" style="cursor:pointer;">&times;</div>
+    <div class="w">
+        <div class="fl">
+            <ul>
+                <li>月木游乐园欢迎您&nbsp;</li>
+                <li class="login-reg">
+                    <a href="./html/login.html">&nbsp; &nbsp;请先登录</a> &nbsp; <a href="./html/register.html"
+                                                                                    class="style_red">免费注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="fr mylist_off">
+            <ul>
+                <li class="mylist" style="cursor: pointer;">我的订单</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 快捷导航模块 end -->
+
+<!-- 头部区域start -->
+<div class="headers w">
+    <!-- logo -->
+    <div class="logo">
+        <div class="logo-bg"></div>
+    </div>
+
+    <!-- 搜索 -->
+    <div class="search">
+        <form action="">
+            <input class="sea-in" type="text" value="请输入游乐项目:">
+            <button></button>
+        </form>
+    </div>
+
+    <!-- 用户 -->
+    <div class="user">
+        <img src="images/user.png" alt="" style="vertical-align: middle; cursor: pointer;" class="userimage">
+        <span class="usernames">你还没有登录</span>
+    </div>
+</div>
+<!-- 头部区域end -->
+
+<!-- banner区域start -->
+<div class="banner">
+    <div class="w">
+        <div class="subnav" style="overflow: hidden">
+            <div style="font-size: 20px; color: #ffffff; text-align: center; background-color: #e0802c;">
+                <span>热门游乐项目</span>
+            </div>
+            <ul id="list"></ul>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="slider">
+            <div class="slider-wrapper">
+                <img src="./images/yl-lb-1.JPG" alt="" />
+            </div>
+            <div class="slider-footer">
+                <p></p>
+                <ul class="slider-indicator">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="toggle">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 游客注意事项 -->
+        <div class="course">
+            <div>
+                <h2>游客注意</h2>
+            </div>
+            <div class="content">
+                <dl>
+                    <!-- *安全规定**：严格遵守游乐园的安全规定，包括身高限制、体重限制、身体状况要求等。不越过警戒线，不擅自进入禁止区域。 -->
+                    <dt>安全规定</dt>
+                    <dd>严格遵守游乐园的安全规定，不擅自进入禁止区域。</dd>
+                </dl>
+                <dl>
+                    <!-- 2. **排队秩序**：尊重排队秩序，不插队、不推挤。了解各项目的等候时间和快速通行方式，合理规划游玩路线。 -->
+                    <dt>排队秩序</dt>
+                    <dd>尊重排队秩序，不插队、不推挤。</dd>
+                </dl>
+                <dl>
+                    <!-- 3. **财物保管**：看管好个人财物，避免携带过多现金和贵重物品。使用游乐园提供的储物柜，轻装上阵，确保物品安全。 -->
+                    <dt>财物保管</dt>
+                    <dd>看管好个人财物，避免携带过多现金和贵重物品。</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner区域end -->
+
+<!-- 提示词start -->
+<div class="goods">
+    <h2 style="color: #fb436d">在月木，您将感受到</h2>
+    <ul>
+        <li><a href="#" style="pointer-events: none">兴奋与刺激</a></li>
+        <li><a href="#" style="pointer-events: none">欢乐与愉悦</a></li>
+        <li><a href="#" style="pointer-events: none">惊喜与好奇</a></li>
+        <li><a href="#" style="pointer-events: none">亲密与陪伴</a></li>
+        <li><a href="#" style="pointer-events: none">成就与满足</a></li>
+        <li><a href="#" style="pointer-events: none">童真与梦想</a></li>
+    </ul>
+    <a href="#" class="hobby">更多值得您来探索</a>
+</div>
+<!-- 提示词end -->
+
+<!-- 热门项目start -->
+<div class="xiufu clearfix">
+    <div class="box nw">
+        <div>
+            <h2>热门项目推荐</h2>
+        </div>
+        <div class=".all">
+            <a class="ticket ticket_off" href="./html/ticket.html">&nbsp; &nbsp;快来购票吧</a>
+        </div>
+    </div>
+    <div class="box1 nw">
+        <ul class="hd">
+        </ul>
+    </div>
+</div>
+<!-- 热门项目end -->
+
+<!-- 底部 start-->
+<div class="footer">
+    <div class="guanggao">
+        <p>联系方式:</p>
+        <div class="zp">
+            <p>15825815258</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="left">
+            <img src="./images/yl-logo.jpg" alt="" style="width: 50%;" />
+            <p>
+                月木游乐园致力于打造中国最好的游乐园。<br />
+            </p>
+        </div>
+        <div class="right">
+            <dl>
+                <dt>关于月木游乐园</dt>
+                <dd>
+                    <a href="#">关于</a>
+                    <a href="#">管理团队</a>
+                    <a href="#">帮助</a>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>新手指南</dt>
+                <dd>
+                    <a href="#">如何注册</a>
+                    <a href="#">如何订单</a>
+                    <a href="#">如何联系我们</a>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>合作伙伴</dt>
+                <dd>
+                    <a href="#">合作机构</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!-- 底部 end -->
+
+<script src="./js/search.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/hotitem.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/top_ranklist.js"></script>
+</body>
+
+</html>

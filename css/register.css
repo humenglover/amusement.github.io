@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+input {
+  outline: none;
+  padding: 0;
+  border: none;
+}
+.xtx-card {
+  width: 100%;
+  height: 800px;
+  background: #fff;
+  border: #27BA9B solid 5px;
+}
+
+.xtx-card h3 {
+  font-size: 26px;
+  font-weight: normal;
+  color: #999999;
+  padding-left: 50px;
+  height: 180px;
+  line-height: 180px;
+}
+
+.xtx-form {
+  padding-left: 460px;
+}
+
+.xtx-form .xtx-form-item {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.xtx-form .xtx-form-item .msg {
+  color: #ff4d4f;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+}
+
+
+.xtx-form .xtx-form-item.pl50 {
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.xtx-form .xtx-form-item span.iconfont {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: #666;
+  font-size: 18px;
+}
+
+.xtx-form .xtx-form-item i {
+  color: #27BA9B;
+  font-size: 14px;
+}
+
+.xtx-form .xtx-form-item input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #e4e4e4;
+  padding-left: 40px;
+}
+
+.xtx-form .xtx-form-item.error input {
+  border-color: #ff4d4f;
+}
+
+.xtx-form .xtx-form-item input::placeholder {
+  color: #cccccc !important;
+}
+
+.xtx-form .xtx-form-item .submit {
+  width: 300px;
+  height: 50px;
+  background: #27BA9B;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.xtx-form .xtx-form-item .code {
+  position: absolute;
+  left: 190px;
+  top: 16px;
+  width: 100px;
+  color: #27BA9B;
+  text-align: right;
+}
+
+.xtx-form .xtx-form-item .code.ing {
+  color: #cccccc;
+}

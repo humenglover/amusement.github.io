@@ -1,0 +1,46 @@
+﻿/* < !-- 快捷导航模块 --> */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航模块 */
+.top {
+    height: 31px;
+    line-height: 31px;
+    background-color: #c1ebf5;
+}
+
+.top ul li {
+    float: left;
+}
+
+.top ul .mylist:hover {
+    font-size: 20px;
+    color: #008cff;
+}
+
+.top .tuichu {
+    float: right;
+    position: fixed;
+    top: 0;
+    right: -2%;
+    cursor: pointer;
+    height: 31px;
+    color: #313837;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.top .tuichu:hover {
+    font-size: 31px;
+    color: #ff0000;
+}
+
